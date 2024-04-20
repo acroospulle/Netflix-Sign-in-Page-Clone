@@ -1,3 +1,4 @@
+/* Write CSS code here */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap");
 
 * {
@@ -69,7 +70,6 @@ nav img {
     transition: all 0.1s ease;
 }
 
-
 .form-control input:is(:focus, :valid) {
     background: #444;
     padding: 16px 20px 0;
@@ -115,4 +115,45 @@ a {
 
 .form-wrapper a {
     text-decoration: none;
+}
+
+
+.form-wrapper p a {
+    color: white;
+}
+
+small {
+    display: block;
+    margin-top: 15px;
+}
+
+.form-wrapper small a {
+    color: #0071eb;
+}
+
+.form-help {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.remember-me {
+    display: flex;
+}
+
+.remember-me input {
+    margin-right: 5px;
+}
+
+
+.form-wrapper a:hover {
+    text-decoration: underline;
+}
+
+form .form-help :where(label, a) {
+    font-size: 14px;
+}
+
+form button:hover, #code:hover {
+    opacity: 0.8;
 }
